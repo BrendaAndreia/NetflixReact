@@ -19,7 +19,7 @@ function FeaturedMovie ({item}) {
         }}>
             <div className="featured-vertical">
                 <div className="featured-horizontal">
-                    <div className="featured-nema">
+                    <div className="featured-name">
                         {item.original_name}
                     </div>
                     <div className="featured-info">
@@ -29,8 +29,8 @@ function FeaturedMovie ({item}) {
                     </div>
                     <div className="featured-description">{item.overview}</div>
                     <div className="featured-buttons">
-                        <a href={`/watch/${item.id}`}>► Assistir</a>
-                        <a href={`/list/add/${item.id}`}>+ Minha Lista</a>
+                        <a className="watch-btn" href={`/watch/${item.id}`}>► Assistir</a>
+                        <a className="mylist-btn" href={`/list/add/${item.id}`}>+ Minha Lista</a>
                     </div>
                     <div className="featured-genres"><strong>Gêneros: </strong>{genres.join(', ')}</div>
                 </div>
